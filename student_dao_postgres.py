@@ -77,8 +77,7 @@ class Student_DAO_Postgres(Student_DAO):
         self._close_connection(conn, cur)
 
         return student
-        
-        
+    
     def create_student(self, student):
         if type(student) is not Student:
             print("You are trying to create", type(student), "which is not a student")
