@@ -8,4 +8,4 @@ Using Data Access Object (DAO) pattern in Python to persist data both in a file 
 
 3. The third module named "student_dao_postgres" persists the data in a relational database. It was created to show the capability of DAO being able to, through a same interface "student_dao", persists the data in as many forms as you want.
 
-I'm only a student, I did it all just to understand a little bit about data persistence in Python. So don't take this repository too seriously. Any suggestion is appreciated.
+I'm only a student, so don't take this repository too seriously. I did it all just to understand a little bit about data persistence in Python. Any suggestion is appreciated.
