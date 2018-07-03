@@ -13,8 +13,9 @@ I'm only a student, so don't take this repository too seriously. I did it all ju
 
 My own notes:
 
-DAO (Data access object):
-•	Similar to an adapter. Connects the services with the database. Provides a superclass interface that can create concrete subclasses for different data sources to interact with. Therefore, for the application point of view, it makes no difference when it accesses a relational database or a file. Because you have programmed to an interface, not to the implementation itself.
-•	The data transfer object (DTO) is a carrier. DAO may use it to return data to the client. DAO may also use it to receive the data from the client to afterwards update the database. 
-•	DTO don’t have any logic, only fields, getters and setters. They’re also not related to the database structure. Whereas domain objects can have logic and are usually related to the database structure.
-•	In our example, a DAO and DTO would be similar (if DTO was implemented), because student doesn’t have any logic, only a state, getters and setters. Therefore, there is no need for a DTO. But we could implement DTO, for example, on get_student(), where a new student would be created (only with field, getters and setters) and the state of the student from the database would be copied into this new created DTO student. Then the DTO would be returned, instead of the student that came from the data base.
+Data access object):
+
+  Similar to an adapter. Connects the services with the database. Provides a superclass interface that can create concrete subclasses for different data sources to interact with. Therefore, for the application point of view, it makes no difference when it accesses a relational database or a file. Because you have programmed to an interface, not to the implementation itself.
+  The data transfer object (DTO) is a carrier. DAO may use it to return data to the client. DAO may also use it to receive the data from the client to afterwards update the database. 
+  DTO don’t have any logic, only fields, getters and setters. They’re also not related to the database structure. Whereas domain objects can have logic and are usually related to the database structure.
+  In our example, a DAO and DTO would be similar (if DTO was implemented), because student doesn’t have any logic, only a state, getters and setters. Therefore, there is no need for a DTO. But we could implement DTO, for example, on get_student(), where a new student would be created (only with field, getters and setters) and the state of the student from the database would be copied into this new created DTO student. Then the DTO would be returned, instead of the student that came from the data base.
